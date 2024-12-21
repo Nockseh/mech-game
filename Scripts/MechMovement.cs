@@ -27,7 +27,5 @@ public partial class MechMovement : CharacterBody2D
 		Single targetRotation = Convert.ToSingle(Math.Atan2(mousePos.Y, mousePos.X) - Math.PI / 2);
 		//TODO: linearly interpolate based on hull's rotor speed
         GetNode<Sprite2D>("HullSprite").Rotation = targetRotation;
-		mousePos += resolution/2;
-		GetNode<Sprite2D>("HullSprite").Rotation = Convert.ToSingle(Math.Atan2(mousePos.Y, mousePos.X));
     }
 }
