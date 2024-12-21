@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{8F289007-27DD-4A02-AE08-238164876EE3}|Mech Game.csproj|solutionrelative:scripts\\mechmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Godot\\Projects\\MechGame\\Scenes\\CameraScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scenes\\CameraScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8F289007-27DD-4A02-AE08-238164876EE3}|Mech Game.csproj|e:\\godot\\projects\\mechgame\\scenes\\camerascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F289007-27DD-4A02-AE08-238164876EE3}|Mech Game.csproj|solutionrelative:scenes\\camerascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +30,7 @@
               "RelativeToolTip": "Scenes\\CameraScript.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T22:35:11.447Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-19T22:35:11.447Z"
             },
             {
               "$type": "Document",
@@ -39,9 +38,9 @@
               "Title": "MechMovement.cs",
               "DocumentMoniker": "E:\\Godot\\Projects\\MechGame\\Scripts\\MechMovement.cs",
               "RelativeDocumentMoniker": "Scripts\\MechMovement.cs",
-              "ToolTip": "E:\\Godot\\Projects\\MechGame\\Scripts\\MechMovement.cs",
-              "RelativeToolTip": "Scripts\\MechMovement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "ToolTip": "E:\\Godot\\Projects\\MechGame\\Scripts\\MechMovement.cs*",
+              "RelativeToolTip": "Scripts\\MechMovement.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-19T21:13:30.798Z",
               "EditorCaption": ""
