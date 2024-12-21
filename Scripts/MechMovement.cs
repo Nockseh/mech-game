@@ -8,11 +8,14 @@ public partial class MechMovement : CharacterBody2D
 	public const float Movement_Lerp = 0.25f;
 
 	public override void _PhysicsProcess(double delta) {
-
+		//Chassis position
 		Vector2 direction = Input.GetVector("Move_Left", "Move_Right", "Move_Up", "Move_Down");
-
 		Velocity = Velocity.Lerp(direction * Move_Speed, Movement_Lerp);
-
 		MoveAndSlide();
+
+		//Hull orientation
+		Viewport viewport = GetViewport();
+		Vector2 mousePos = viewport.GetMousePosition();
 	}
+
 }
