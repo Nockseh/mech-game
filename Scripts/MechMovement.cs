@@ -23,5 +23,6 @@ public partial class MechMovement : CharacterBody2D
 		Vector2 resolution = viewport.GetVisibleRect().Size;
 		mousePos += resolution/2;
 		GetNode<Sprite2D>("HullSprite").Rotation = Convert.ToSingle(Math.Atan2(mousePos.Y, mousePos.X));
+		//test
     }
 }
