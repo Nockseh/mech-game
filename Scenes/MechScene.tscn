@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://djrtvn4hhuk7j"]
+
+[ext_resource type="Script" path="res://Scripts/MechMovement.cs" id="1_0gxvh"]
+[ext_resource type="Texture2D" uid="uid://ckolt8cvjpij0" path="res://Textures/mechHullPlaceholder.png" id="2_bjc85"]
+[ext_resource type="Script" path="res://Scenes/CameraScript.cs" id="3_jaape"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qcmsj"]
+
+[node name="MechSceneRoot" type="Node2D"]
+
+[node name="MechBody" type="CharacterBody2D" parent="."]
+unique_name_in_owner = true
+motion_mode = 1
+platform_on_leave = 2
+script = ExtResource("1_0gxvh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MechBody"]
+top_level = true
+scale = Vector2(1.5, 2)
+shape = SubResource("CircleShape2D_qcmsj")
+
+[node name="Sprite2D" type="Sprite2D" parent="MechBody"]
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("2_bjc85")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
+script = ExtResource("3_jaape")
