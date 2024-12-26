@@ -1,0 +1,34 @@
+{
+	"Chassis": {
+		"Placeholder" : {
+			"Texture": "res://Textures/MechParts/Chassis/placeholderChassis.png",
+			"Integrity": 100,
+			"Armor": 5,
+			"WeightCapacity": 200,
+		}
+	},
+	"Hull" : {
+		"Placeholder" : {
+			"Texture": "res://Textures/MechParts/Hull/placeholderHull.png",
+			"Integrity": 100,
+			"Armor": 5,
+			"Weight": 100,
+			"PrimarySlots": 2,
+			"Primary1X" : 110,
+			"Primary1Y" : -35,
+			"Primary2X" : -110,
+			"Primary2Y" : -35,
+			"SecondarySlots": 2,
+			"Secondary1X" : 100,
+			"Secondary1Y" : -75,
+			"Secondary2X" : -100,
+			"Secondary2Y" : -75,
+			"UtilitySlots": 1,
+			"Utility1X" : 0,
+			"Utility1Y" : -100
+		}
+	},
+	"Primary" : {},
+	"Secondary" : {},
+	"Utility" : {}
+}

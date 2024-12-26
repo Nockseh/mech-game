@@ -1,36 +1,28 @@
-[gd_scene load_steps=6 format=3 uid="uid://djrtvn4hhuk7j"]
+[gd_scene load_steps=5 format=3 uid="uid://djrtvn4hhuk7j"]
 
 [ext_resource type="Script" path="res://Scripts/MechMovement.cs" id="1_0gxvh"]
-[ext_resource type="Texture2D" uid="uid://ckolt8cvjpij0" path="res://Textures/mechHullPlaceholder.png" id="2_bjc85"]
-[ext_resource type="Script" path="res://Scenes/CameraScript.cs" id="3_jaape"]
-[ext_resource type="Texture2D" uid="uid://dygcgdaq8t5rc" path="res://Textures/mechChassisPlaceholder.png" id="3_pod7k"]
+[ext_resource type="Texture2D" uid="uid://ckolt8cvjpij0" path="res://Textures/MechParts/Hull/placeholderHull.png" id="2_i6d0y"]
+[ext_resource type="Texture2D" uid="uid://dygcgdaq8t5rc" path="res://Textures/MechParts/Chassis/placeholderChassis.png" id="4_rjvix"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qcmsj"]
 
-[node name="MechSceneRoot" type="Node2D"]
-
-[node name="MechBody" type="CharacterBody2D" parent="."]
+[node name="MechBody" type="CharacterBody2D"]
 unique_name_in_owner = true
 motion_mode = 1
 platform_on_leave = 2
 script = ExtResource("1_0gxvh")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MechBody"]
-top_level = true
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+z_index = 10
 scale = Vector2(2, 2)
 shape = SubResource("CircleShape2D_qcmsj")
 
-[node name="HullSprite" type="Sprite2D" parent="MechBody"]
+[node name="HullSprite" type="Sprite2D" parent="."]
 scale = Vector2(0.12, 0.12)
-texture = ExtResource("2_bjc85")
+texture = ExtResource("2_i6d0y")
 
-[node name="ChassisSprite" type="Sprite2D" parent="MechBody"]
+[node name="ChassisSprite" type="Sprite2D" parent="."]
 z_index = -1
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("3_pod7k")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
-position_smoothing_enabled = true
-position_smoothing_speed = 10.0
-script = ExtResource("3_jaape")
+texture = ExtResource("4_rjvix")

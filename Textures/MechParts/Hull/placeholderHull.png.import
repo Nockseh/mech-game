@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dygcgdaq8t5rc"
-path="res://.godot/imported/mechChassisPlaceholder.png-f3d9545ba826bbf210456b755e853ac6.ctex"
+uid="uid://ckolt8cvjpij0"
+path="res://.godot/imported/placeholderHull.png-9c4c5bca14d7c7f7687469fe9d6cba2f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/mechChassisPlaceholder.png"
-dest_files=["res://.godot/imported/mechChassisPlaceholder.png-f3d9545ba826bbf210456b755e853ac6.ctex"]
+source_file="res://Textures/MechParts/Hull/placeholderHull.png"
+dest_files=["res://.godot/imported/placeholderHull.png-9c4c5bca14d7c7f7687469fe9d6cba2f.ctex"]
 
 [params]
 

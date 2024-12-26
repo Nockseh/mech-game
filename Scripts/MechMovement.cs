@@ -10,7 +10,7 @@ public partial class MechMovement : CharacterBody2D
 
 
     public override void _Ready() {
-		
+
     }
 
     public override void _PhysicsProcess(double delta) {
