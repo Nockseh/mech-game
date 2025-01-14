@@ -3,7 +3,6 @@
 [ext_resource type="Script" path="res://Scripts/CameraScript.cs" id="1_ptylt"]
 
 [node name="Camera2D" type="Camera2D"]
-zoom = Vector2(2, 2)
 position_smoothing_enabled = true
 position_smoothing_speed = 10.0
 script = ExtResource("1_ptylt")

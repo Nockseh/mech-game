@@ -1,0 +1,29 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://ddxjh1rtw3iih"]
+
+[ext_resource type="Texture2D" uid="uid://kxpy82cg52os" path="res://Textures/MechParts/Primary/Cannon/Cannon0.png" id="1_4bgkq"]
+[ext_resource type="Texture2D" uid="uid://b7bcsncn1752k" path="res://Textures/MechParts/Primary/Cannon/Cannon3.png" id="2_4qyb7"]
+[ext_resource type="Texture2D" uid="uid://c37my45l2067r" path="res://Textures/MechParts/Primary/Cannon/Cannon2.png" id="3_nkfi8"]
+[ext_resource type="Texture2D" uid="uid://d3lkjwi68qh4f" path="res://Textures/MechParts/Primary/Cannon/Cannon1.png" id="4_gi5dq"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_4bgkq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_4qyb7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_nkfi8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gi5dq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_4bgkq")
+}],
+"loop": false,
+"name": &"default",
+"speed": 10.0
+}]

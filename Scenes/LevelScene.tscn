@@ -1,10 +1,35 @@
-[gd_scene load_steps=3 format=3 uid="uid://bb57ryeioitwc"]
+[gd_scene load_steps=5 format=3 uid="uid://bb57ryeioitwc"]
 
 [ext_resource type="Script" path="res://Scripts/MasterScript.cs" id="1_6ww4g"]
 [ext_resource type="Texture2D" uid="uid://b3in7lxrjgjrw" path="res://Textures/27grid1000x1000.png" id="1_mkmyf"]
+[ext_resource type="Texture2D" uid="uid://b164gxx33830" path="res://Textures/icon.svg" id="3_uegxq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_60nvb"]
+size = Vector2(129, 128)
 
 [node name="LevelSceneRoot" type="Node2D"]
 script = ExtResource("1_6ww4g")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
 texture = ExtResource("1_mkmyf")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(540, -216)
+scale = Vector2(0.5, 2.25)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_60nvb")
+
+[node name="Wall" type="Sprite2D" parent="StaticBody2D"]
+texture = ExtResource("3_uegxq")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(427, -328)
+scale = Vector2(2.25, 0.5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+shape = SubResource("RectangleShape2D_60nvb")
+
+[node name="Wall" type="Sprite2D" parent="StaticBody2D2"]
+texture = ExtResource("3_uegxq")

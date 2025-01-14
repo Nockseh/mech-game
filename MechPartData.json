@@ -4,7 +4,7 @@
 			"Texture": "res://Textures/MechParts/Chassis/placeholderChassis.png",
 			"Integrity": 100,
 			"Armor": 5,
-			"WeightCapacity": 200,
+			"WeightCapacity": 200
 		}
 	},
 	"Hull" : {
@@ -28,7 +28,14 @@
 			"Utility1Y" : -100
 		}
 	},
-	"Primary" : {},
+	"Primary" : {
+		"Cannon" : {
+			"SpriteFrames" : "res://Textures/MechParts/Primary/Cannon/CannonFrames.tres",
+			"Integrity" : 50,
+			"Armor" : 5,
+			"Weight" : 25
+		}
+	},
 	"Secondary" : {},
 	"Utility" : {}
 }

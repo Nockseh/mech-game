@@ -10,6 +10,6 @@ public partial class CameraScript : Camera2D {
 	}
 
 	public override void _Process(double delta) {
-		Position = MechBody.Position;
+		GlobalPosition = MechBody.Position;
 	}
 }
