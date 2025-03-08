@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\Godot\\Projects\\MechGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8F289007-27DD-4A02-AE08-238164876EE3}|Mech Game.csproj|e:\\godot\\projects\\mechgame\\scripts\\classdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F289007-27DD-4A02-AE08-238164876EE3}|Mech Game.csproj|solutionrelative:scripts\\classdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8F289007-27DD-4A02-AE08-238164876EE3}|Mech Game.csproj|e:\\godot\\projects\\mechgame\\scripts\\mechcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F289007-27DD-4A02-AE08-238164876EE3}|Mech Game.csproj|solutionrelative:scripts\\mechcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F289007-27DD-4A02-AE08-238164876EE3}|Mech Game.csproj|e:\\godot\\projects\\mechgame\\scripts\\classdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F289007-27DD-4A02-AE08-238164876EE3}|Mech Game.csproj|solutionrelative:scripts\\classdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F289007-27DD-4A02-AE08-238164876EE3}|Mech Game.csproj|e:\\godot\\projects\\mechgame\\scripts\\masterscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,22 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ClassDefinitions.cs",
-              "DocumentMoniker": "E:\\Godot\\Projects\\MechGame\\Scripts\\ClassDefinitions.cs",
-              "RelativeDocumentMoniker": "Scripts\\ClassDefinitions.cs",
-              "ToolTip": "E:\\Godot\\Projects\\MechGame\\Scripts\\ClassDefinitions.cs",
-              "RelativeToolTip": "Scripts\\ClassDefinitions.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAgwF4AAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T23:35:58.144Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -50,9 +36,22 @@
               "RelativeDocumentMoniker": "Scripts\\MasterScript.cs",
               "ToolTip": "E:\\Godot\\Projects\\MechGame\\Scripts\\MasterScript.cs",
               "RelativeToolTip": "Scripts\\MasterScript.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T01:13:41.348Z",
+              "WhenOpened": "2025-03-04T21:22:34.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClassDefinitions.cs",
+              "DocumentMoniker": "E:\\Godot\\Projects\\MechGame\\Scripts\\ClassDefinitions.cs",
+              "RelativeDocumentMoniker": "Scripts\\ClassDefinitions.cs",
+              "ToolTip": "E:\\Godot\\Projects\\MechGame\\Scripts\\ClassDefinitions.cs",
+              "RelativeToolTip": "Scripts\\ClassDefinitions.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwBcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T23:35:58.144Z",
               "EditorCaption": ""
             },
             {
@@ -63,20 +62,19 @@
               "RelativeDocumentMoniker": "Scripts\\CameraScript.cs",
               "ToolTip": "E:\\Godot\\Projects\\MechGame\\Scripts\\CameraScript.cs",
               "RelativeToolTip": "Scripts\\CameraScript.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T03:37:43.352Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T03:37:43.352Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MechController.cs",
               "DocumentMoniker": "E:\\Godot\\Projects\\MechGame\\Scripts\\MechController.cs",
               "RelativeDocumentMoniker": "Scripts\\MechController.cs",
               "ToolTip": "E:\\Godot\\Projects\\MechGame\\Scripts\\MechController.cs",
               "RelativeToolTip": "Scripts\\MechController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAIoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-13T20:54:36.809Z",
               "EditorCaption": ""

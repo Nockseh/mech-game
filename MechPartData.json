@@ -1,7 +1,30 @@
 {
 	"Chassis": {
-		"Placeholder" : {
+		"PlaceholderTwoLegs": {
+			"ChassisType": "TwoLegs",
+			"MoveSpeed": 250,
+			"RotateSpeed": 180,
+			"RotorSpeed": 75,
 			"Texture": "res://Textures/MechParts/Chassis/placeholderChassis.png",
+			"Integrity": 100,
+			"Armor": 5,
+			"WeightCapacity": 200
+		},
+		"PlaceholderFourLegs": {
+			"ChassisType": "FourLegs",
+			"MoveSpeed": 300,
+			"RotorSpeed": 90,
+			"Texture": "res://Textures/MechParts/Chassis/placeholderChassis.png",
+			"Integrity": 100,
+			"Armor": 5,
+			"WeightCapacity": 200
+		},
+		"PlaceholderTreads": {
+			"ChassisType": "Treads",
+			"MoveSpeed": 200,
+			"RotateSpeed": 120,
+			"RotorSpeed": 60,
+			"Texture": "res://Textures/MechParts/Chassis/placeholderChassisTreads.png",
 			"Integrity": 100,
 			"Armor": 5,
 			"WeightCapacity": 200
@@ -9,23 +32,26 @@
 	},
 	"Hull" : {
 		"Placeholder" : {
+			"MoveSpeed" : 300,
 			"Texture": "res://Textures/MechParts/Hull/placeholderHull.png",
 			"Integrity": 100,
 			"Armor": 5,
 			"Weight": 100,
+			"RotorSpeed" : 180,
 			"PrimarySlots": 2,
-			"Primary1X" : 110,
-			"Primary1Y" : -35,
-			"Primary2X" : -110,
-			"Primary2Y" : -35,
+			"PrimaryOffsets" : [
+				[110, -35],
+				[-110, -35]
+			],
 			"SecondarySlots": 2,
-			"Secondary1X" : 100,
-			"Secondary1Y" : -75,
-			"Secondary2X" : -100,
-			"Secondary2Y" : -75,
+			"SecondaryOffsets" : [
+				[100, -75],
+				[-100, -75]
+			],
 			"UtilitySlots": 1,
-			"Utility1X" : 0,
-			"Utility1Y" : -100
+			"UtilityOffsets" : [
+				[0, -100]
+			]
 		}
 	},
 	"Primary" : {

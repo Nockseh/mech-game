@@ -1,6 +1,5 @@
-[gd_scene load_steps=5 format=3 uid="uid://bb57ryeioitwc"]
+[gd_scene load_steps=4 format=3 uid="uid://bb57ryeioitwc"]
 
-[ext_resource type="Script" path="res://Scripts/MasterScript.cs" id="1_6ww4g"]
 [ext_resource type="Texture2D" uid="uid://b3in7lxrjgjrw" path="res://Textures/27grid1000x1000.png" id="1_mkmyf"]
 [ext_resource type="Texture2D" uid="uid://b164gxx33830" path="res://Textures/icon.svg" id="3_uegxq"]
 
@@ -8,7 +7,6 @@
 size = Vector2(129, 128)
 
 [node name="LevelSceneRoot" type="Node2D"]
-script = ExtResource("1_6ww4g")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
