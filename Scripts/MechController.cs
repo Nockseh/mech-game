@@ -1,6 +1,7 @@
 using Godot;
 using System;
-using System.ComponentModel.Design.Serialization;
+using MechGame;
+using static MechGame.HelperClass;
 
 public partial class MechController : CharacterBody2D
 {
@@ -73,10 +74,10 @@ public partial class MechController : CharacterBody2D
         if (moveDirection.Y != 0) {
 			float mult = 1f;
 			if (moveDirection.Y > 0) mult = -Backpedal_Multiplier;
-            linearVelocity = GlobalHelper.Lerpf(linearVelocity, MoveSpeed * mult, Movement_Lerp);
+            linearVelocity = Lerpf(linearVelocity, MoveSpeed * mult, Movement_Lerp);
             Velocity = new Vector2(Mathf.Cos(chassisNode.GlobalRotation), Mathf.Sin(chassisNode.GlobalRotation)) * linearVelocity;
         } else {
-            linearVelocity = GlobalHelper.Lerpf(linearVelocity, 0f, Movement_Lerp);
+            linearVelocity = Lerpf(linearVelocity, 0f, Movement_Lerp);
             Velocity = new Vector2(Mathf.Cos(chassisNode.GlobalRotation), Mathf.Sin(chassisNode.GlobalRotation)) * linearVelocity;
         }
 		//rotation
@@ -97,7 +98,7 @@ public partial class MechController : CharacterBody2D
 
         if (moveDirection.Length() > 0) {
 			//forward movement TODO: backwards too
-			linearVelocity = GlobalHelper.Lerpf(linearVelocity, MoveSpeed, Movement_Lerp);
+			linearVelocity = Lerpf(linearVelocity, MoveSpeed, Movement_Lerp);
 			Velocity = new Vector2(Mathf.Cos(chassisNode.GlobalRotation), Mathf.Sin(chassisNode.GlobalRotation)) * linearVelocity;
 			//rotation
 			float targetRotation = Mathf.Atan2(moveDirection.Y, moveDirection.X);
@@ -116,7 +117,7 @@ public partial class MechController : CharacterBody2D
 			chassisNode.GlobalRotation = rotateTo;
         } else {
 			//slow to a stop
-            linearVelocity = GlobalHelper.Lerpf(linearVelocity, 0f, Movement_Lerp);
+            linearVelocity = Lerpf(linearVelocity, 0f, Movement_Lerp);
             Velocity = new Vector2(Mathf.Cos(chassisNode.GlobalRotation), Mathf.Sin(chassisNode.GlobalRotation)) * linearVelocity;
         }
 			MoveAndSlide();
@@ -132,13 +133,13 @@ public partial class MechController : CharacterBody2D
             //check if reversing direction is more efficient
             float differencePlus = Mathf.Abs(chassisNode.GlobalRotation + Mathf.Pi - targetRotation);
             float differenceMinus = Mathf.Abs(chassisNode.GlobalRotation - Mathf.Pi - targetRotation);
-            if (differencePlus < Mathf.Pi / 2 || differenceMinus < Mathf.Pi / 2) { //checks if reversed is less than 45 deg.
+            if (differencePlus < Mathf.Pi / 4 || differenceMinus < Mathf.Pi / 4) { //checks if reversed is less than 45 deg.
                 targetRotation += Mathf.Pi;
-                linearVelocity = GlobalHelper.Lerpf(linearVelocity, -MoveSpeed, Movement_Lerp);
-                //todo: fix logical error regarding 45 deg (Pi/2)
+                linearVelocity = Lerpf(linearVelocity, -MoveSpeed, Movement_Lerp);
+                //todo: fix logical error regarding 45 deg (Pi/4)
             }
             else {
-                linearVelocity = GlobalHelper.Lerpf(linearVelocity, MoveSpeed, Movement_Lerp);
+                linearVelocity = Lerpf(linearVelocity, MoveSpeed, Movement_Lerp);
             }
             //linear movement
             Velocity = new Vector2(Mathf.Cos(chassisNode.GlobalRotation), Mathf.Sin(chassisNode.GlobalRotation)) * linearVelocity;
@@ -162,7 +163,7 @@ public partial class MechController : CharacterBody2D
         }
         else {
             //slow to a stop
-            linearVelocity = GlobalHelper.Lerpf(linearVelocity, 0f, Movement_Lerp);
+            linearVelocity = Lerpf(linearVelocity, 0f, Movement_Lerp);
             Velocity = new Vector2(Mathf.Cos(chassisNode.GlobalRotation), Mathf.Sin(chassisNode.GlobalRotation)) * linearVelocity;
         }
         MoveAndSlide();

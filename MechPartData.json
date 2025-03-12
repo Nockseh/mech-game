@@ -32,7 +32,6 @@
 	},
 	"Hull" : {
 		"Placeholder" : {
-			"MoveSpeed" : 300,
 			"Texture": "res://Textures/MechParts/Hull/placeholderHull.png",
 			"Integrity": 100,
 			"Armor": 5,

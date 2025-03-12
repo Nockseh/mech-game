@@ -1,5 +1,6 @@
 using Godot;
 using System;
+//doesn't use our custom namespace yet
 
 public partial class CameraScript : Camera2D {
 
